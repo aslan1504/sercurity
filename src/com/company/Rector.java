@@ -23,13 +23,13 @@ public class Rector extends SecureObjectRoot implements Serializable{
         return getName();
     }
 
-    /*public void saveState(Object obj) throws IOException {
+    public void saveState(Object obj) throws IOException {
         FileOutputStream fos = new FileOutputStream(fullName()+".out");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(obj);
         oos.flush();
         oos.close();
-    }*/
+    }
 
     //---------------getters generated----------------
     public String getName() {
