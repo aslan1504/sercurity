@@ -1,11 +1,18 @@
 package com.company;
 
+import java.io.IOException;
+
 public class Main {
     public static void main(String[] args) {
         /*Scanner sc = new Scanner(System.in);
         String name = sc.next();*/
-        Rector rc = new Rector("Gus'", "default");
+        Rector rc = new Rector("Gus", "default");
         rc.create();
+        try {
+            rc.saveState(rc);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         Director d = new Director("Chip", "4486");
         d.create();
         HeadOfDep h = new HeadOfDep("Sug", "4576");
