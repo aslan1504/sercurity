@@ -9,7 +9,7 @@ public class Main {
         Rector rc = new Rector("Gus", "default");
         rc.create();
         try {
-            rc.saveState(rc);
+            rc.saveState();
         } catch (IOException e) {
             e.printStackTrace();
         }
